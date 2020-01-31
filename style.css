@@ -1,0 +1,101 @@
+body{
+    min-width: 300px;
+    background-image: url('bg-curvy-desktop.png');
+    background-repeat: no-repeat;
+    background-color:  hsl(218, 28%, 13%);
+    font-family: 'Open Sans', sans-serif; font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+
+#navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    line-height: 3rem;
+    width: 300px;
+    height: 80%;
+    border-right: hsl(0, 0, 100%) solid;
+    background-color: hsl(219, 30%, 18%);
+}
+
+#navbar li{
+    list-style-type: none;
+    text-decoration: none;
+    border-top: 1px solid;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+#navbar a{
+    /* display: block; */
+    text-decoration: none;
+    line-height: 2rem;
+    font-family: 'Open Sans', sans-serif;color: hsl(0, 0%, 100%);
+    font-size: 14px;font-weight: 400;
+}
+#navbar ul{
+    height: 90%;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+nav header{
+    font-family: 'Raleway', sans-serif;font-weight: 700;font-size: 1.6rem;
+    padding:10px 10px;
+    margin: 10px;
+    text-align: center;
+}
+#main-doc{
+    position: absolute;
+    margin-left: 350px;
+    margin-bottom: 100px;
+
+}
+#main-doc header{
+    font-family: 'Raleway', sans-serif;font-weight: 700;font-size: 1.5rem;
+    color: darkred;
+    text-align: left;
+    margin-top: 20px;
+}
+code{
+    background-color: white;
+    font-family: 'Source Code Pro', monospace;color: darkred;font-size: 14px;
+    padding: 0;
+    margin-top: 10px;
+}
+section li{
+    margin: 15px 0px 0px 20px;
+}
+section article{
+    margin: 10px 15px 10px 15px;
+}
+#Reference a{
+    /* list-style-type: none; */
+    /* text-decoration: none; */
+    color: hsl(0, 0%, 100%);
+}
+
+@media only screen and(max-width:850px) {
+
+                #navbar{
+                    top: 0;
+                    padding: 0;
+                    margin: 0;
+                    position: absolute;
+                    width: 100%;
+                    max-height: 275px;
+                    border: none;
+                    z-index: 1;
+                    border-bottom: 2px solid;
+                }  
+                #navbar ul {
+                    border: 1px solid;
+                    height: 207px;
+                }
+                #main-doc {
+                    position: relative;
+                    margin-left: 0px;
+                    margin-top: 270px;
+                  }  
+
+}
